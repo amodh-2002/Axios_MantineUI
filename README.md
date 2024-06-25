@@ -6,7 +6,7 @@
 
    ```bash
    git clone https://github.com/amodh-2002/Axios_MantineUI.git
-   cd react-vite-starter
+   cd Axios_MantineUI
    ```
 
    ```
