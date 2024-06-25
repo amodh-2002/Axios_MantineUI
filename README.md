@@ -23,5 +23,5 @@
    https://dummyjson.com/docs/products
    
 3. Resources for Ag-Grid:
-   [https://www.youtube.com/watch?v=6hxbPqziELk&list=PLsZlhayVgqNwHNHeqpCkSgdRV08xrKtzW)
+   https://www.youtube.com/watch?v=6hxbPqziELk&list=PLsZlhayVgqNwHNHeqpCkSgdRV08xrKtzW
    
