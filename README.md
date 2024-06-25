@@ -24,4 +24,7 @@
    
 3. Resources for Ag-Grid:
    https://www.youtube.com/watch?v=6hxbPqziELk&list=PLsZlhayVgqNwHNHeqpCkSgdRV08xrKtzW
+
+4. Link for the website:
+   https://axios-mantine-ui.vercel.app
    
