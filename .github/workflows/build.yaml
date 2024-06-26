@@ -1,0 +1,25 @@
+name: Code Build Workflow
+
+on:
+    workflow_run:
+      workflows: 
+        - Sonar Code Review Workflow
+      types:
+        - completed
+        
+jobs:
+  build:
+    name: Build
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Docker build and push
+        run: |
+          docker build -t axios_Mantine_UI .
+          docker tag axios_Mantine_UI howaboutwepullsomeimages/axios_Mantine_UI:latest
+          docker login -u ${{ secrets.DOCKERHUB_USERNAME }} -p ${{ secrets.DOCKERHUB_TOKEN }}
+          docker push howaboutwepullsomeimages/axios_Mantine_UI:latest
+        env:
+          DOCKER_CLI_ACI: 1
